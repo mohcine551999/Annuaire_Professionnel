@@ -5,7 +5,7 @@
     <group>
         <item
             android:id="@+id/save"
-            android:icon="@drawable/icons8_check"
+            android:icon="@drawable/updated"
             android:title="Save"
             app:showAsAction="ifRoom|collapseActionView" />
     </group>

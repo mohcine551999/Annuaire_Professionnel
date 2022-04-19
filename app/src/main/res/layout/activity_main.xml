@@ -25,7 +25,7 @@
         android:layout_gravity="bottom|center"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="16dp"
-        android:src="@drawable/icons8_add" />
+        android:src="@drawable/contact" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerV"

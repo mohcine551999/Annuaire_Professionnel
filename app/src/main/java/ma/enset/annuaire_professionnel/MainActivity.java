@@ -1,5 +1,6 @@
 package ma.enset.annuaire_professionnel;
 
+import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,6 +9,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
+import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -33,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        ActivityCompat.requestPermissions(MainActivity.this,
+                new String[]{
+                        //Manifest.permission.READ_EXTERNAL_STORAGE,
+                        //Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                        Manifest.permission.CALL_PHONE
+                },
+                1);
         setSupportActionBar(binding.toolbar);
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -5,12 +5,12 @@
     <group>
         <item
             android:id="@+id/save"
-            android:icon="@drawable/icons8_save"
+            android:icon="@drawable/save"
             android:title="Save"
             app:showAsAction="ifRoom|collapseActionView" />
         <item
             android:id="@+id/reload"
-            android:icon="@drawable/icons8_refresh"
+            android:icon="@drawable/refresh"
             android:title="Empty"
             app:showAsAction="ifRoom|collapseActionView" />
     </group>
